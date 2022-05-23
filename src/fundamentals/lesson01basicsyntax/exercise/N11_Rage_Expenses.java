@@ -1,38 +1,28 @@
+package lesson01basicsyntax.exercise;
+
 import java.util.Scanner;
 
-public class Temp {
+public class N11_Rage_Expenses {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-
+        int lostGamesCount = Integer.parseInt(scanner.nextLine());
         int headsetRate = 2;
         int mouseRate = 3;
         int keyboardRate = headsetRate * mouseRate;
         int displayRate = keyboardRate * 2;
-
-        int lostGamesCount = Integer.parseInt(scanner.nextLine());
-
+        int headsetCount = lostGamesCount / headsetRate;
+        int mouseCount = lostGamesCount / mouseRate;
+        int keyboardCount = lostGamesCount / keyboardRate;
+        int displayCount = lostGamesCount / displayRate;
         double headsetPrice = Double.parseDouble(scanner.nextLine());
         double mousePrice = Double.parseDouble(scanner.nextLine());
         double keyboardPrice = Double.parseDouble(scanner.nextLine());
         double displayPrice = Double.parseDouble(scanner.nextLine());
 
-        double totalBill = 0;
-        for (int i = 1; i < lostGamesCount + 1; i++) {
-            if (i % headsetRate == 0) {
-                totalBill += headsetPrice;
-            }
-            if (i % mouseRate == 0) {
-                totalBill += mousePrice;
-            }
-            if (i % keyboardRate == 0) {
-                totalBill += keyboardPrice;
-            }
-            if (i % displayRate == 0) {
-                totalBill += displayPrice;
-            }
-        }
+        double totalBill = headsetCount * headsetPrice +
+                mouseCount * mousePrice +
+                keyboardCount * keyboardPrice +
+                displayCount * displayPrice;
         System.out.printf("Rage expenses: %.2f lv.", totalBill);
     }
 }
-
-

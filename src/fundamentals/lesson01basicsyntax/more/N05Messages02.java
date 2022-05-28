@@ -2,7 +2,7 @@ package lesson01basicsyntax.more;
 
 import java.util.Scanner;
 
-public class N05Messages2 {
+public class N05Messages02 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int numLines = Integer.parseInt(scanner.nextLine());

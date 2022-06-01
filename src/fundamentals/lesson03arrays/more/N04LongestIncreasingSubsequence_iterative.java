@@ -3,7 +3,7 @@ package lesson03arrays.more;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class N04LongestIncreasingSubsequence_Iterative {
+public class N04LongestIncreasingSubsequence_iterative {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);

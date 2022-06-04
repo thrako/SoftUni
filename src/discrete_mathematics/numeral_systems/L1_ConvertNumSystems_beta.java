@@ -1,4 +1,4 @@
-package helpers;
+package numeral_systems;
 
 import java.math.BigInteger;
 import java.util.Scanner;

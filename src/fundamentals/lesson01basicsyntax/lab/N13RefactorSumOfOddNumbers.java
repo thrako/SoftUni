@@ -12,6 +12,5 @@ public class N13RefactorSumOfOddNumbers {
             sum += 2 * i + 1;
         }
         System.out.printf("Sum: %d%n", sum);
-
     }
 }

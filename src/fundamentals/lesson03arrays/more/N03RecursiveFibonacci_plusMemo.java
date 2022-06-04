@@ -2,7 +2,7 @@ package lesson03arrays.more;
 
 import java.util.Scanner;
 
-public class N03RecursiveFibonacci_PlusMemo {
+public class N03RecursiveFibonacci_plusMemo {
     public static long[] fibonacciSequence;
 
     public static void main(String[] args) {

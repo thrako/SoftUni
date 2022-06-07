@@ -1,5 +1,6 @@
 package helpers.logics;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 /*
@@ -38,29 +39,55 @@ import java.util.Scanner;
                 A <-> B = (A -> B) ^ (B -> A)
                 A <-> B = (A ^ B) v (~A ^ ~B)
 */
-public class TruthTable_2 {
+public class TruthTable {
     private static boolean[][] table;
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Number of propositions (2)");
-        int numPropositions = 2;
-        int numRows = (int) Math.pow(2, numPropositions);
-        int numCols = numPropositions;
-
+        System.out.print("Number of propositions: ");
+        int numCols = Integer.parseInt(scanner.nextLine());
+        int numRows = (int) Math.pow(2, numCols);
         table = new boolean[numRows][numCols];
         fillTable(numRows, numCols);
+        printTable(numRows, numCols);
+    }
 
+    private static void printTable(int numRows, int numCols) {
+        boolean p, q, r, s;
+        p = q = r = s = false;
+
+        printHeadings(numCols);
         for (int row = 0; row < numRows; row++) {
-            boolean p = table[row][0];
-            boolean q = table[row][1];
+            if (numCols > 0) p = table[row][0];
+            if (numCols > 1) q = table[row][1];
+            if (numCols > 2) r = table[row][2];
+            if (numCols > 3) s = table[row][3];
 
-            // (p ^ (p -> q)) -> q
-            boolean expression = imply(p,q) == imply(!q, !p);
-            System.out.println(expression);
+            boolean expression =
+                    // (p ^ (p -> q)) -> q
+                    imply(p && imply(p,q), q);
+
+            System.out.print(Arrays.toString(table[row]));
+            System.out.print(" --> " + expression);
+            System.out.println();
         }
     }
 
+    private static void printHeadings(int numCols) {
+        if (numCols > 0) System.out.print("  (p)  ");
+        if (numCols > 1) System.out.print("  (q)  ");
+        if (numCols > 2) System.out.print("  (r)  ");
+        if (numCols > 3) System.out.print("  (s)  ");
+        if (numCols > 4) System.out.print("  (t)  ");
+        if (numCols > 5) System.out.print("  (u)  ");
+        if (numCols > 6) System.out.print("  (v)  ");
+        if (numCols > 7) System.out.print("  (w)  ");
+        if (numCols > 8) System.out.print("  (x)  ");
+        if (numCols > 9) System.out.print("  (y)  ");
+
+        System.out.print("--> exp");
+        System.out.println();
+    }
 
     private static boolean imply(boolean a, boolean b) {
         return !a || b;
@@ -68,27 +95,15 @@ public class TruthTable_2 {
 
     private static void fillTable(int numRows, int numCols) {
 
-        for (int row = 0; row < numRows; row++) {
-            for (int col = 0; col < numCols; col++) {
-
-                if (col == 0) {
-                    if (row == 0 || row == 1) {
-                        table[row][col] = true;
-                    } else {
-                        if (table[row - 1][col] == table[row - 2][col]) {
-                            table[row][col] = !table[row - 1][col];
-                        } else {
-                            table[row][col] = table[row - 1][col];
-                        }
-                    }
-                } else {
-                    if (row % 2 == 0) {
-                        table[row][col] = true;
-                    }
-                }
+        for (int i = 0; i < numRows; i++) {
+            String binStr = Integer.toString(i, 2);
+            for (int j = 0; j < binStr.length(); j++) {
+                if (binStr.charAt(binStr.length() - 1 - j) == '1')
+                    table[i][numCols - 1 - j] = true;
             }
         }
-
     }
+
+
 }
 

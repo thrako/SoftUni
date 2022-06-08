@@ -1,6 +1,5 @@
 package lesson04methods.lab;
 
-import java.io.PrintStream;
 import java.util.Scanner;
 
 public class N01SignOfInteger {

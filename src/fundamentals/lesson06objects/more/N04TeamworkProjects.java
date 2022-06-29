@@ -45,11 +45,10 @@ public class N04TeamworkProjects {
             } else if (isFounder(newMember, teams) || isMember(newMember, teams)) {
                 System.out.printf("Member %s cannot join team %s!%n", newMember, teamName);
             } else {
-                Team teamToJoin = teams.stream()
+                teams.stream()
                         .filter(t -> t.getName().equals(teamName))
                         .findAny()
-                        .get();
-                teamToJoin.addMember(newMember);
+                        .ifPresent(t -> t.addMember(newMember));
             }
             input = scanner.nextLine();
         }

@@ -1,12 +1,12 @@
 #### Java lessons (_theory and practice_):
 - [Basic Syntax, Conditional Statements and Loops](https://github.com/thrako/SoftUni/blob/68cdae986f6e0892777cbeb3ba6b6615ea3bbee8/src/fundamentals/lesson01basicsyntax)  
-  > Introduction to Basic Syntax  
-  > Input/Output  
-  > Comparison Operators  
-  > Implementing Control-Flow Logic  
-  > Logical Operators  
-  > Loops  
-  > Debugging and Troubleshooting  
+> Introduction to Basic Syntax  
+Input/Output  
+Comparison Operators  
+Implementing Control-Flow Logic  
+Logical Operators  
+Loops  
+Debugging and Troubleshooting  
 - [Data Types and Variables](https://github.com/thrako/SoftUni/blob/60ac4dbd79559def10c0c2f5a613708bc6df5d20/src/fundamentals/lesson02datatypesandvariables)  
   > Data Types and Variables  
   > Integer Types  

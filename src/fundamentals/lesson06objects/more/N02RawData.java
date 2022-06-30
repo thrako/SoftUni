@@ -4,36 +4,36 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
-import java.util.stream.Collectors;
 
 public class N02RawData {
+    private static final double MIN_PRESSURE = 1;
+    private static final int MAX_POWER = 250;
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int carsCount = Integer.parseInt(scanner.nextLine());
-        List<Car> cars = readInputs(scanner, carsCount);
-        List<Car> filteredCars = new ArrayList<>();
+        List<Car> cars = consoleFill(scanner);
+
         String keyword = scanner.nextLine();
-        if ("fragile".equals(keyword)) {
-            int minPressure = 1;
-            filteredCars = findFragile(cars, minPressure);
-        } else if ("flamable".equals(keyword)) { //typo in design
-            int maxPower = 250;
-            filteredCars = findFlammable(cars, maxPower);
-        }
+        switch (keyword) {
+            case "fragile":
+                cars.stream()
+                        .filter(car -> car.getCargo().getType().equals(keyword))
+                        .filter(car -> Arrays.stream(car.getTyres())
+                                .anyMatch(tyre -> tyre.getPressure() < MIN_PRESSURE))
+                        .forEach(c -> System.out.println(c.getModel()));
+                break;
 
-        if (filteredCars.size() > 0) {
-            printModels(filteredCars);
+            case "flamable": //typo in design
+                cars.stream()
+                        .filter(car -> car.getCargo().getType().equals(keyword))
+                        .filter(car -> car.getEngine().getPower() > MAX_POWER)
+                        .forEach(c -> System.out.println(c.getModel()));
+                break;
         }
     }
 
-    private static void printModels(List<Car> filteredCars) {
-        for (Car filteredCar : filteredCars) {
-            System.out.println(filteredCar.getModel());
-        }
-    }
-
-    private static List<Car> readInputs(Scanner scanner, int carsCount) {
+    private static List<Car> consoleFill(Scanner scanner) {
+        int carsCount = Integer.parseInt(scanner.nextLine());
         List<Car> cars = new ArrayList<>(carsCount);
         for (int i = 0; i < carsCount; i++) {
             String[] inputs = scanner.nextLine().split("\\s+");
@@ -55,33 +55,16 @@ public class N02RawData {
                 );
                 tyres[j] = tyre;
             }
-            cars.add(new Car(
-                    model, engine, cargo, tyres
-            ));
+            cars.add(new Car(model, engine, cargo, tyres));
         }
         return cars;
-    }
-
-    private static List<Car> findFragile(List<Car> cars, int minPressure) {
-        return cars.stream()
-                .filter(car -> car.getCargo().getType().equals("fragile"))
-                .filter(car -> Arrays.stream(car.getTyres())
-                        .anyMatch(tyre -> !tyre.hasEnoughPressure(minPressure)))
-                .collect(Collectors.toList());
-    }
-
-    private static List<Car> findFlammable(List<Car> cars, int maxPower) {
-        return cars.stream()
-                .filter(car -> car.getCargo().getType().equals("flamable"))
-                .filter(car -> car.getEngine().exceedsMaxPower(maxPower))
-                .collect(Collectors.toList());
     }
 
     private static class Car {
         private final String model;
         private final Engine engine;
         private final Cargo cargo;
-        private Tyre[] tyres;
+        private final Tyre[] tyres;
 
         public Car(String model, Engine engine, Cargo cargo, Tyre[] tyres) {
             this.model = model;
@@ -116,8 +99,8 @@ public class N02RawData {
             this.power = power;
         }
 
-        public boolean exceedsMaxPower(int maxPower) {
-            return power > maxPower;
+        public int getPower() {
+            return power;
         }
     }
 
@@ -144,8 +127,8 @@ public class N02RawData {
             this.age = age;
         }
 
-        public boolean hasEnoughPressure(int minPressure) {
-            return this.pressure >= minPressure;
+        public double getPressure() {
+            return pressure;
         }
     }
 }

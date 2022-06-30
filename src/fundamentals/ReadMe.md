@@ -6,12 +6,23 @@
 [Mid Exam](https://github.com/thrako/SoftUni/blob/60ac4dbd79559def10c0c2f5a613708bc6df5d20/src/fundamentals/exams/mid20220625)  
 [Objects and Classes](https://github.com/thrako/SoftUni/blob/60ac4dbd79559def10c0c2f5a613708bc6df5d20/src/fundamentals/exams/mid20220625)  
 [Associative Arrays / Dictionaries](https://github.com/thrako/SoftUni/blob/60ac4dbd79559def10c0c2f5a613708bc6df5d20/src/fundamentals/lesson07associative_lambda_stream)  
-
-    Bitwise Operations  
     Text Processing  
     Regular Expressions  
-    Database Basics  
-    Basic Web Project  
     Practical Exam  
-
 [Past Exams - practice](https://github.com/thrako/SoftUni/blob/60ac4dbd79559def10c0c2f5a613708bc6df5d20/src/fundamentals/pastexams)  
+
+Common (theory only) lectures:
+
+    IT Talks  
+    Language Comparison  
+    Course Introduction  
+    Git and GitHub  
+    HTTP Basics  
+    HTML & CSS Basics  
+    Software Development Concepts - Part 1  
+    Software Development Concepts - Part 2  
+    Bitwise Operations  
+    Problem Solving  
+    Database Basics  
+    QA Introduction  
+    Basic Web Project  

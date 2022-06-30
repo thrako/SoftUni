@@ -7,16 +7,17 @@ import java.util.Scanner;
 public class N03CarSalesman {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int enginesCount = Integer.parseInt(scanner.nextLine());
-        List<Engine> engines = readEngines(scanner, enginesCount);
-        int carsCount = Integer.parseInt(scanner.nextLine());
-        List<Car> cars = readCars(scanner, engines, carsCount);
+
+        List<Engine> engines = readEngines(scanner);
+
+        List<Car> cars = readCars(scanner, engines);
         for (Car car : cars) {
             System.out.println(car);
         }
     }
 
-    private static List<Engine> readEngines(Scanner scanner, int enginesCount) {
+    private static List<Engine> readEngines(Scanner scanner) {
+        int enginesCount = Integer.parseInt(scanner.nextLine());
         List<Engine> engines = new ArrayList<>(enginesCount);
 
         for (int i = 0; i < enginesCount; i++) {
@@ -39,7 +40,8 @@ public class N03CarSalesman {
         return engines;
     }
 
-    private static List<Car> readCars(Scanner scanner, List<Engine> engines, int carsCount) {
+    private static List<Car> readCars(Scanner scanner, List<Engine> engines) {
+        int carsCount = Integer.parseInt(scanner.nextLine());
         List<Car> cars = new ArrayList<>(carsCount);
         for (int i = 0; i < carsCount; i++) {
             String[] inputs = scanner.nextLine().split("\\s+");

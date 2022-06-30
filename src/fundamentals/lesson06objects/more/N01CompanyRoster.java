@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 import java.util.Scanner;
-import java.util.stream.Collectors;
 
 public class N01CompanyRoster {
 
@@ -13,42 +12,35 @@ public class N01CompanyRoster {
         int employeesCount = Integer.parseInt(scanner.nextLine());
         List<Department> departments = new ArrayList<>(employeesCount);
         processInputData(scanner, employeesCount, departments);
-
-        Department highestAvgSalaryDep = getHighestAvgSalaryDepartment(departments);
-        List<Employee> employees = getEmployeeListSortedBySalaryDesc(highestAvgSalaryDep);
-
-        printResults(highestAvgSalaryDep, employees);
+        printHighestPaidDep(departments);
     }
 
     private static void processInputData(Scanner scanner, int employeesCount, List<Department> departments) {
         for (int i = 0; i < employeesCount; i++) {
             String[] employeeData = scanner.nextLine().split("\\s+");
             Employee employee = buildEmployee(employeeData);
-            Department department = findExistingDepartment(departments, employee.getDepartment());
-            if (department == null) department = createDepartment(departments, employee.getDepartment());
+            Department department = departments.stream()
+                    .filter(d -> d.getName().equals(employee.getDepartment()))
+                    .findFirst()
+                    .orElse(null);
+            if (department == null) {
+                department = new Department(employee.getDepartment());
+                departments.add(department);
+            }
             department.add(employee);
+
         }
     }
 
-    private static Department getHighestAvgSalaryDepartment(List<Department> departments) {
-        Department highestAvgSalaryDep;
-        highestAvgSalaryDep = departments.stream()
+    private static void printHighestPaidDep(List<Department> departments) {
+        departments.stream()
                 .max(Comparator.comparingDouble(Department::getAvgSalary))
-                .orElse(null);
-        return highestAvgSalaryDep;
-    }
-
-    private static List<Employee> getEmployeeListSortedBySalaryDesc(Department highestAvgSalaryDep) {
-        return new ArrayList<>(highestAvgSalaryDep.getDepartmentEmployees()).stream()
-                .sorted(Comparator.comparingDouble((Employee::getSalary)).reversed())
-                .collect(Collectors.toList());
-    }
-
-    private static void printResults(Department highestAvgSalaryDep, List<Employee> employees) {
-        System.out.printf("Highest Average Salary: %s%n", highestAvgSalaryDep.getName());
-        for (Employee employee : employees) {
-            System.out.println(employee);
-        }
+                .ifPresent(d -> {
+                    System.out.printf("Highest Average Salary: %s%n", d.getName());
+                    d.getDepartmentEmployees().stream()
+                            .sorted(Comparator.comparingDouble((Employee::getSalary)).reversed())
+                            .forEach(System.out::println);
+                });
     }
 
     private static Employee buildEmployee(String[] employeeData) {
@@ -70,19 +62,6 @@ public class N01CompanyRoster {
             employee.setAge(Integer.parseInt(employeeData[5]));
         }
         return employee;
-    }
-
-    private static Department findExistingDepartment(List<Department> departments, String departmentName) {
-        return departments.stream()
-                .filter(e -> e.getName().equals(departmentName))
-                .findAny()
-                .orElse(null);
-    }
-
-    private static Department createDepartment(List<Department> departments, String departmentName) {
-        Department department = new Department(departmentName);
-        departments.add(department);
-        return department;
     }
 
     private static class Employee {
@@ -150,9 +129,9 @@ public class N01CompanyRoster {
             this.name = name;
         }
 
-        public void add(Employee departmentEmployee) {
-            departmentEmployees.add(departmentEmployee);
-            payroll += departmentEmployee.getSalary();
+        public void add(Employee employee) {
+            departmentEmployees.add(employee);
+            payroll += employee.getSalary();
         }
 
         public String getName() {

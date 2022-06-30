@@ -34,10 +34,10 @@ Foreach Loop
  Program Execution Flow  
 > 
 [Lists/Arrays Advanced](https://github.com/thrako/SoftUni/blob/60ac4dbd79559def10c0c2f5a613708bc6df5d20/src/fundamentals/lesson05lists)  
- > Lists Overview
- List Manipulating
- Reading Lists from the Console
- Sorting Lists and Arrays
+ > Lists Overview  
+ List Manipulating  
+ Reading Lists from the Console  
+ Sorting Lists and Arrays  
 > 
 [Mid Exam](https://github.com/thrako/SoftUni/blob/60ac4dbd79559def10c0c2f5a613708bc6df5d20/src/fundamentals/exams/mid20220625)  
 [Objects and Classes](https://github.com/thrako/SoftUni/blob/60ac4dbd79559def10c0c2f5a613708bc6df5d20/src/fundamentals/exams/mid20220625)  

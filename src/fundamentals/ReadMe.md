@@ -1,5 +1,5 @@
 ### Java lessons (_theory and practice_):
-[Basic Syntax, Conditional Statements and Loops](https://github.com/thrako/SoftUni/blob/68cdae986f6e0892777cbeb3ba6b6615ea3bbee8/src/fundamentals/lesson01basicsyntax)  
+[Basic Syntax, Conditional Statements and Loops](https://github.com/thrako/SoftUni/tree/main/src/fundamentals/lesson01basicsyntax)  
  > Introduction to Basic Syntax  
 Input/Output  
 Comparison Operators  
@@ -8,7 +8,7 @@ Logical Operators
 Loops  
 Debugging and Troubleshooting  
 > 
-[Data Types and Variables](https://github.com/thrako/SoftUni/blob/60ac4dbd79559def10c0c2f5a613708bc6df5d20/src/fundamentals/lesson02datatypesandvariables)  
+[Data Types and Variables](https://github.com/thrako/SoftUni/tree/main/src/fundamentals/lesson02datatypesandvariables)  
  > Data Types and Variables  
 Integer Types  
 Real Number Types  
@@ -17,14 +17,14 @@ Boolean Type
 Character Type  
 String Type  
 > 
-[Arrays/Lists](https://github.com/thrako/SoftUni/blob/60ac4dbd79559def10c0c2f5a613708bc6df5d20/src/fundamentals/lesson03arrays)  
+[Arrays/Lists](https://github.com/thrako/SoftUni/tree/main/src/fundamentals/lesson03arrays)  
  > Allocating Arrays  
 Assigning Values to Array Elements  
 Accessing Array Elements  
 Reading Arrays from the Console  
 Foreach Loop  
 > 
-[Methods/Functions](https://github.com/thrako/SoftUni/blob/60ac4dbd79559def10c0c2f5a613708bc6df5d20/src/fundamentals/lesson04methods)  
+[Methods/Functions](https://github.com/thrako/SoftUni/tree/main/src/fundamentals/lesson04methods)  
  > Declaring and Invoking Methods  
  Naming and Best Practices  
  Void and Return Type Methods  
@@ -33,19 +33,19 @@ Foreach Loop
  Overloading Methods  
  Program Execution Flow  
 > 
-[Lists/Arrays Advanced](https://github.com/thrako/SoftUni/blob/60ac4dbd79559def10c0c2f5a613708bc6df5d20/src/fundamentals/lesson05lists)  
+[Lists/Arrays Advanced](https://github.com/thrako/SoftUni/tree/main/src/fundamentals/lesson05lists)  
  > Lists Overview  
  List Manipulating  
  Reading Lists from the Console  
  Sorting Lists and Arrays  
 > 
-[Mid Exam](https://github.com/thrako/SoftUni/blob/60ac4dbd79559def10c0c2f5a613708bc6df5d20/src/fundamentals/exams/mid20220625)  
-[Objects and Classes](https://github.com/thrako/SoftUni/blob/60ac4dbd79559def10c0c2f5a613708bc6df5d20/src/fundamentals/exams/mid20220625)  
-[Associative Arrays / Dictionaries](https://github.com/thrako/SoftUni/blob/60ac4dbd79559def10c0c2f5a613708bc6df5d20/src/fundamentals/lesson07associative_lambda_stream)  
+[Mid Exam](https://github.com/thrako/SoftUni/tree/main/src/fundamentals/exams/mid20220625)  
+[Objects and Classes](https://github.com/thrako/SoftUni/tree/main/src/fundamentals/exams/mid20220625)  
+[Associative Arrays / Dictionaries](https://github.com/thrako/SoftUni/tree/main/src/fundamentals/lesson07associative_lambda_stream)  
 Text Processing  
 Regular Expressions  
 Practical Exam  
-[Past Exams - practice](https://github.com/thrako/SoftUni/blob/60ac4dbd79559def10c0c2f5a613708bc6df5d20/src/fundamentals/pastexams)  
+[Past Exams - practice](https://github.com/thrako/SoftUni/tree/main/src/fundamentals/pastexams)  
 
 ### Common lectures (_theory mainly_):
 Language Comparison  

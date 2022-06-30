@@ -8,14 +8,14 @@ public class N04TeamworkProjects {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int teamsCount = Integer.parseInt(scanner.nextLine());
-        List<Team> teams = new ArrayList<>(teamsCount);
-        registerTeams(teamsCount, teams, scanner);
+        List<Team> teams = registerTeams(scanner);
         registerMembers(teams, scanner);
         printSorted(teams);
     }
 
-    private static void registerTeams(int teamsCount, List<Team> teams, Scanner scanner) {
+    private static List<Team> registerTeams(Scanner scanner) {
+        int teamsCount = Integer.parseInt(scanner.nextLine());
+        List<Team> teams = new ArrayList<>(teamsCount);
         String[] tokens;
         String input;
         for (int i = 0; i < teamsCount; i++) {
@@ -30,6 +30,7 @@ public class N04TeamworkProjects {
                 System.out.printf("Team %s has been created by %s!%n", teamName, founder);
             }
         }
+        return teams;
     }
 
     private static void registerMembers(List<Team> teams, Scanner scanner) {
@@ -54,32 +55,21 @@ public class N04TeamworkProjects {
         }
     }
 
-    private static boolean isMember(String newMember, List<Team> teams) {
-        return teams.stream()
-                .map(Team::getMembers)
-                .anyMatch(ls -> ls.contains(newMember));
-    }
-
     private static void printSorted(List<Team> teams) {
         List<Team> sortedTeams = teams.stream()
                 .sorted(Comparator.comparingInt(Team::getMembersCount)
                         .reversed()
                         .thenComparing(Team::getName))
                 .collect(Collectors.toList());
-        List<Team> validTeams = sortedTeams.stream()
+
+        sortedTeams.stream()
                 .filter(t -> t.getMembersCount() > 0)
-                .collect(Collectors.toList());
-        for (Team team : validTeams) {
-            System.out.print(team);
-        }
-        System.out.printf("Teams to disband:%n");
-        List<String> teamsToDisband = sortedTeams.stream()
+                .forEach(System.out::print);
+
+        System.out.println("Teams to disband:");
+        sortedTeams.stream()
                 .filter(t -> t.getMembersCount() == 0)
-                .map(Team::getName)
-                .collect(Collectors.toList());
-        for (String teamName : teamsToDisband) {
-            System.out.println(teamName);
-        }
+                .forEach(t -> System.out.println(t.getName()));
     }
 
     private static boolean isRegistered(String teamName, List<Team> teams) {
@@ -92,6 +82,12 @@ public class N04TeamworkProjects {
                 .map(Team::getFounder)
                 .anyMatch(founderName -> founderName.equals(user));
 
+    }
+
+    private static boolean isMember(String newMember, List<Team> teams) {
+        return teams.stream()
+                .map(Team::getMembers)
+                .anyMatch(ls -> ls.contains(newMember));
     }
 
     private static class Team {
@@ -132,14 +128,14 @@ public class N04TeamworkProjects {
                             "- %s%n",
                             name, founder
                     ));
-            List<String> sortedMembers = new ArrayList<> (members);
+            List<String> sortedMembers = new ArrayList<>(members);
             Collections.sort(sortedMembers);
             for (String member : sortedMembers) {
                 strBld.append(
                         String.format(
-                            "-- %s%n",
-                            member
-                ));
+                                "-- %s%n",
+                                member
+                        ));
             }
             return strBld.toString();
         }

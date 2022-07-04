@@ -1,2 +1,2 @@
 # SoftUni
-Educational Tasks and Projects
+Educational Projects and Tasks 

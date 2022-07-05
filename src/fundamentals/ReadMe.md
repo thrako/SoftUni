@@ -39,7 +39,7 @@ Foreach Loop
  Reading Lists from the Console  
  Sorting Lists and Arrays  
 > 
-[Mid Exam](https://github.com/thrako/SoftUni/tree/main/src/fundamentals/exams/mid20220625)  
+[My Mid Exam](https://github.com/thrako/SoftUni/tree/main/src/fundamentals/my_exams/mid20220625)  
 [Objects and Classes](https://github.com/thrako/SoftUni/tree/main/src/fundamentals/exams/mid20220625)  
 [Associative Arrays / Dictionaries](https://github.com/thrako/SoftUni/tree/main/src/fundamentals/lesson07associative_lambda_stream)  
 Text Processing  
@@ -91,29 +91,29 @@ Software Architectures, Front-End and Back-End
 
 Software Development Concepts - Part 2  
   > Fundamental Concepts and Paradigms in the Software Engineering Profession  
-1.Front-End Development Concepts  
-Web Front-End and DOM  
-AJAX and RESTful APIs  
-Templating Engines  
-Routing and Routing Libraries  
-Libraries vs. Frameworks  
-UI Frameworks  
-Mobile Apps  
-2.Back-End Development Concepts  
-Databases and DBMS Systems  
-ORM Frameworks  
-The MVC Pattern  
-Virtualization, Cloud and Containers  
-Operating Systems and Linux Shell  
-3.Embedded Systems and IoT 
-Arduino  
-ESP32  
-4.Software Engineering Concepts  
-Software Development Lifecycle  
-Software Quality Assurance (QA)  
-Unit Testing  
-Source Control Systems  
-Project Trackers and Kanban Boards  
+1. Front-End Development Concepts  
+- Web Front-End and DOM  
+- AJAX and RESTful APIs  
+- Templating Engines  
+- Routing and Routing Libraries  
+- Libraries vs. Frameworks  
+- UI Frameworks  
+- Mobile Apps  
+2. Back-End Development Concepts  
+- Databases and DBMS Systems  
+- ORM Frameworks  
+- The MVC Pattern  
+- Virtualization, Cloud and Containers  
+- Operating Systems and Linux Shell  
+3. Embedded Systems and IoT 
+- Arduino  
+- ESP32  
+4. Software Engineering Concepts  
+- Software Development Lifecycle  
+- Software Quality Assurance (QA)  
+- Unit Testing  
+- Source Control Systems  
+- Project Trackers and Kanban Boards  
 >
 Bitwise Operations  
 Problem Solving  

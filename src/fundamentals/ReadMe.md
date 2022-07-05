@@ -89,9 +89,8 @@ Component-Based and Event-Driven Programming
 Asynchronous Programming and Promises  
 Software Architectures, Front-End and Back-End  
 
-Software Development Concepts - Part 2  
-> Fundamental Concepts and Paradigms in the Software Engineering Profession  
-> 1. Front-End Development Concepts  
+Software Development Concepts - Part 2
+> Front-End Development Concepts  
 >  - Web Front-End and DOM  
 >  - AJAX and RESTful APIs  
 >  - Templating Engines  
@@ -99,16 +98,19 @@ Software Development Concepts - Part 2
 >  - Libraries vs. Frameworks  
 >  - UI Frameworks  
 >  - Mobile Apps  
-> 2. Back-End Development Concepts  
+> 
+> Back-End Development Concepts  
 >  - Databases and DBMS Systems  
 >  - ORM Frameworks  
 >  - The MVC Pattern  
 >  - Virtualization, Cloud and Containers  
 >  - Operating Systems and Linux Shell  
-> 3. Embedded Systems and IoT 
+> 
+> Embedded Systems and IoT 
 >  - Arduino  
 >  - ESP32  
-> 4. Software Engineering Concepts  
+> 
+> Software Engineering Concepts  
 >  - Software Development Lifecycle  
 >  - Software Quality Assurance (QA)  
 >  - Unit Testing  

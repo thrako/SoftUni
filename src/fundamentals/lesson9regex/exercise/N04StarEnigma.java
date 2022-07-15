@@ -39,7 +39,6 @@ public class N04StarEnigma {
                 if ("A".equals(type)) attacked.add(name);
                 else if ("D".equals(type)) destroyed.add(name);
             }
-
         }
 
         System.out.printf("Attacked planets: %d%n", attacked.size());

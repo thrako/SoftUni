@@ -1,6 +1,9 @@
 package lesson9regex.exercise;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -42,6 +45,7 @@ public class N04StarEnigma {
         System.out.printf("Attacked planets: %d%n", attacked.size());
         Collections.sort(attacked);
         attacked.forEach(n -> System.out.printf("-> %s%n", n));
+
         System.out.printf("Destroyed planets: %d%n", destroyed.size());
         Collections.sort(destroyed);
         destroyed.forEach(n -> System.out.printf("-> %s%n", n));

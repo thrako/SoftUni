@@ -40,6 +40,10 @@ Foreach Loop
  Sorting Lists and Arrays  
 > 
 [My Mid Exam](https://github.com/thrako/SoftUni/tree/main/src/fundamentals/my_exams/mid20220625)  
+> 01 The Hunting Games  
+> 02 Tax Calculator  
+> 03 The Angry Cat  
+> 
 [Objects and Classes](https://github.com/thrako/SoftUni/tree/main/src/fundamentals/exams/mid20220625)  
 >Objects  
 Classes  

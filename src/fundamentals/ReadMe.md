@@ -41,7 +41,25 @@ Foreach Loop
 > 
 [My Mid Exam](https://github.com/thrako/SoftUni/tree/main/src/fundamentals/my_exams/mid20220625)  
 [Objects and Classes](https://github.com/thrako/SoftUni/tree/main/src/fundamentals/exams/mid20220625)  
+>Objects  
+Classes  
+Built in Classes  
+Defining Simple Classes  
+Fields  
+Constructors  
+Methods  
+> 
 [Associative Arrays / Dictionaries](https://github.com/thrako/SoftUni/tree/main/src/fundamentals/lesson07associative_lambda_stream)  
+> Associative Arrays  
+> - HashMap <key, value>  
+> - LinkedHashMap <key, value>  
+> - TreeMap <key, value>  
+> Lambda  
+> Stream API  
+> - Filtering  
+> - Mapping  
+> - Ordering  
+> 
 [Text Processing](https://github.com/thrako/SoftUni/tree/main/src/fundamentals/lesson8text_processing)
 > Strings  
 Manipulating Strings  

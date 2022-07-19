@@ -42,8 +42,19 @@ Foreach Loop
 [My Mid Exam](https://github.com/thrako/SoftUni/tree/main/src/fundamentals/my_exams/mid20220625)  
 [Objects and Classes](https://github.com/thrako/SoftUni/tree/main/src/fundamentals/exams/mid20220625)  
 [Associative Arrays / Dictionaries](https://github.com/thrako/SoftUni/tree/main/src/fundamentals/lesson07associative_lambda_stream)  
-Text Processing  
-Regular Expressions  
+[Text Processing](https://github.com/thrako/SoftUni/tree/main/src/fundamentals/lesson8text_processing)
+> Strings;
+Manipulating Strings;
+Building and Modifying Strings.
+> 
+[Regular Expressions](https://github.com/thrako/SoftUni/tree/main/src/fundamentals/lesson9regex)
+> Regular Expressions Syntax
+Definition and Pattern
+Predefined Character Classes
+Quantifiers and Grouping
+Backreferences
+Regular Expressions in Java
+> 
 Practical Exam  
 [Past Exams - practice](https://github.com/thrako/SoftUni/tree/main/src/fundamentals/pastexams)  
 

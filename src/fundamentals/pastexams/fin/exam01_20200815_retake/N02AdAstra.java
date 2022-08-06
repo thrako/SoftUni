@@ -7,7 +7,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class N02AdAstra {
-    private static final int kcalPerDay = 2000;
+    private static final int KCAL_PER_DAY = 2_000;
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -22,7 +22,7 @@ public class N02AdAstra {
             foods.add(new Food(name, expDate, kcal));
         }
         int totalKCal = foods.stream().map(Food::getKcal).reduce(Integer::sum).orElse(0);
-        int days = totalKCal / kcalPerDay;
+        int days = totalKCal / KCAL_PER_DAY;
         System.out.printf("You have food to last you for: %d days!%n", days);
         foods.forEach(System.out::println);
     }

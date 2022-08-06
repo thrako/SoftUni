@@ -14,14 +14,11 @@ public class N11ArrayManipulator {
         String command, evenOrOdd;
         int idx, limit;
 
-
-        while (true) {
-            String[] tokens = scanner.nextLine().split(" ");
+        String[] tokens = scanner.nextLine().split(" ");
+        while (!"end".equals(tokens[0])) {
             command = tokens[0];
-            if ("end".equals(command)) break;
 
             switch (command) {
-
                 case "exchange":
                     idx = Integer.parseInt(tokens[1]);
                     if (!isInBounds(idx)) System.out.println("Invalid index");
@@ -39,6 +36,7 @@ public class N11ArrayManipulator {
                     System.out.println(find(command, limit, evenOrOdd));
                     break;
             }
+            tokens = scanner.nextLine().split(" ");
         }
         System.out.println(Arrays.toString(elements));
     }

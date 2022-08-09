@@ -1,6 +1,6 @@
 ### Java lessons (_theory and practice_):
 [Basic Syntax, Conditional Statements and Loops](https://github.com/thrako/SoftUni/tree/main/src/fundamentals/lesson01basicsyntax)  
- > Introduction to Basic Syntax  
+> Introduction to Basic Syntax  
 Input/Output  
 Comparison Operators  
 Implementing Control-Flow Logic  
@@ -9,7 +9,7 @@ Loops
 Debugging and Troubleshooting  
 > 
 [Data Types and Variables](https://github.com/thrako/SoftUni/tree/main/src/fundamentals/lesson02datatypesandvariables)  
- > Data Types and Variables  
+> Data Types and Variables  
 Integer Types  
 Real Number Types  
 Type Conversion  
@@ -18,31 +18,32 @@ Character Type
 String Type  
 > 
 [Arrays/Lists](https://github.com/thrako/SoftUni/tree/main/src/fundamentals/lesson03arrays)  
- > Allocating Arrays  
+> Allocating Arrays  
 Assigning Values to Array Elements  
 Accessing Array Elements  
 Reading Arrays from the Console  
 Foreach Loop  
 > 
 [Methods/Functions](https://github.com/thrako/SoftUni/tree/main/src/fundamentals/lesson04methods)  
- > Declaring and Invoking Methods  
- Naming and Best Practices  
- Void and Return Type Methods  
- Methods with Parameters  
- Value vs. Reference Types  
- Overloading Methods  
- Program Execution Flow  
+> Declaring and Invoking Methods  
+Naming and Best Practices  
+Void and Return Type Methods  
+Methods with Parameters  
+Value vs. Reference Types  
+Overloading Methods  
+Program Execution Flow  
 > 
 [Lists/Arrays Advanced](https://github.com/thrako/SoftUni/tree/main/src/fundamentals/lesson05lists)  
- > Lists Overview  
- List Manipulating  
- Reading Lists from the Console  
- Sorting Lists and Arrays  
-> 
+> Lists Overview  
+List Manipulating  
+Reading Lists from the Console  
+Sorting Lists and Arrays  
+>
+[Past Exams Mid - practice](https://github.com/thrako/SoftUni/tree/main/src/fundamentals/past_exams/mid)
 [My Mid Exam](https://github.com/thrako/SoftUni/tree/main/src/fundamentals/my_exams/mid20220625)  
 > 01 The Hunting Games  
-> 02 Tax Calculator  
-> 03 The Angry Cat  
+02 Tax Calculator  
+03 The Angry Cat  
 > 
 [Objects and Classes](https://github.com/thrako/SoftUni/tree/main/src/fundamentals/exams/mid20220625)  
 >Objects  
@@ -79,11 +80,16 @@ Backreferences
 Regular Expressions in Java  
 > 
 Practical Exam  
-[Past Exams - practice](https://github.com/thrako/SoftUni/tree/main/src/fundamentals/pastexams)  
+[Past Exams Final - practice](https://github.com/thrako/SoftUni/tree/main/src/fundamentals/past_exams/fin)  
+[My Final Exam](https://github.com/thrako/SoftUni/tree/main/src/fundamentals/my_exams)  
+> Hogwarts  
+Encrypting Password
+Messages Manager
+> 
 
 ### Common lectures (_theory mainly_):
 Language Comparison  
- > Execution Model  
+> Execution Model  
 Variables  
 Data Types  
 Printing on the Console  
@@ -92,12 +98,12 @@ Loops
 Development Environments (IDE)
 > 
 Git and GitHub  
- > Software Configuration Management and Source Control Systems  
+> Software Configuration Management and Source Control Systems  
 Introduction to Git: Working with git, Git Bash, and TortoiseGit  
 Introduction to GitHub: Create a Repo, Clone, Commit, Push, Conflicts  
 > 
 HTTP Basics  
- > The HTTP Protocol – Basic Concepts  
+> The HTTP Protocol – Basic Concepts  
 HTTP Developer Tools  
 HTML Forms  
 HTTP Request  
@@ -122,7 +128,7 @@ Data Structures and Algorithms
 Component-Based and Event-Driven Programming  
 Asynchronous Programming and Promises  
 Software Architectures, Front-End and Back-End  
-
+>
 Software Development Concepts - Part 2
 > Front-End Development Concepts  
 >  - Web Front-End and DOM  
@@ -152,7 +158,28 @@ Software Development Concepts - Part 2
 >  - Project Trackers and Kanban Boards  
 >
 Bitwise Operations  
+> Bits, Numerals Systems and Bitwise Operations  
+Bits and Bitwise Operations  
+>
 Problem Solving  
+> Fundamental Skills of Software Engineers  
+Problems: Definition and Problem Solving  
+Stages of Problem Solving  
+Solving Exam Problems  
+> 
 Database Basics  
+> Databases Introduction  
+SQL vs. NoSQL Databases  
+DBMS Systems  
+> 
 QA Introduction  
+> Software Quality Assurance  
+QA Engineers and Resposibilities  
+Bugs and Bug Trackers  
+Testing, Test Types and Test Levels  
+Test Automation, Frameworks and Tools  
+> 
 Basic Web Project  
+> Model-View Controller (MVC)  
+Spring MVC (Annotations, Controllers, Processing Requests)  
+Thymeleaf View Engine  

@@ -1,4 +1,4 @@
-package lesson8text_processing.more;
+package lesson08text_processing.more;
 
 import java.util.Arrays;
 import java.util.HashMap;

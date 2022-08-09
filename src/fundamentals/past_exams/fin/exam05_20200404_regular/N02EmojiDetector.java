@@ -1,4 +1,4 @@
-package pastexams.fin.exam05_20200404_regular;
+package past_exams.fin.exam05_20200404_regular;
 
 
 import java.util.ArrayList;

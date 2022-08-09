@@ -1,4 +1,4 @@
-package pastexams.fin.exam01_20200815_retake;
+package past_exams.fin.exam01_20200815_retake;
 
 import java.util.Scanner;
 

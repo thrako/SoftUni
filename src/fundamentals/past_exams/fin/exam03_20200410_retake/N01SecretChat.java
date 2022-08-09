@@ -1,4 +1,4 @@
-package pastexams.fin.exam03_20200410_retake;
+package past_exams.fin.exam03_20200410_retake;
 
 import java.util.Scanner;
 import java.util.regex.Pattern;

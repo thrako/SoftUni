@@ -1,4 +1,4 @@
-package pastexams.fin.exam04_20200404_regular;
+package past_exams.fin.exam04_20200404_regular;
 
 import java.util.Scanner;
 import java.util.regex.Matcher;

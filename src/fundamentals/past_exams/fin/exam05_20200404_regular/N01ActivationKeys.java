@@ -1,7 +1,6 @@
-package pastexams.fin.exam05_20200404_regular;
+package past_exams.fin.exam05_20200404_regular;
 
 import java.util.Scanner;
-import java.util.regex.Pattern;
 
 public class N01ActivationKeys {
     private static final String END = "Generate";

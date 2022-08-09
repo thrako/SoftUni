@@ -1,6 +1,5 @@
-package lesson8text_processing.exercise;
+package lesson08text_processing.exercise;
 
-import java.util.Locale;
 import java.util.Scanner;
 
 public class N08LettersChangeNumbers {

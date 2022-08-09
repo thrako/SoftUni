@@ -1,4 +1,4 @@
-package lesson8text_processing.exercise;
+package lesson08text_processing.exercise;
 
 import java.util.Scanner;
 

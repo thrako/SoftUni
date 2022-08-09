@@ -28,7 +28,7 @@ public class N05DragonArmy_NestedHashMaps {
             currStats.put("armor", armor);
         }
 
-        for (Map.Entry<String, Map<String, Map<String, Integer>>> type : army.entrySet()) {
+        for (var type : army.entrySet()) {
             double totalDamage = 0;
             double totalHealth = 0;
             double totalArmor = 0;
@@ -44,11 +44,11 @@ public class N05DragonArmy_NestedHashMaps {
                     type.getKey(), totalDamage/count, totalHealth/count, totalArmor/count);
 
             var dragon = type.getValue().entrySet();
-            for (Map.Entry<String, Map<String, Integer>> dragonStats : dragon) {
-                var name = dragonStats.getKey();
-                var damage = dragonStats.getValue().get("damage");
-                var health = dragonStats.getValue().get("health");
-                var armor = dragonStats.getValue().get("armor");
+            for (var dragonStats : dragon) {
+                String name = dragonStats.getKey();
+                Integer damage = dragonStats.getValue().get("damage");
+                Integer health = dragonStats.getValue().get("health");
+                Integer armor = dragonStats.getValue().get("armor");
                 System.out.printf(
                         "-%s -> damage: %d, health: %d, armor: %d%n",
                         name, damage, health, armor

@@ -1,4 +1,4 @@
-package pastexams.mid.exam06_unknown_retake;
+package past_exams.mid.exam06_unknown_retake;
 
 import java.util.Scanner;
 

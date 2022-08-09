@@ -1,4 +1,4 @@
-package pastexams.mid.exam02_20200705_regular;
+package past_exams.mid.exam02_20200705_regular;
 
 import java.util.Scanner;
 

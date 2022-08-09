@@ -1,4 +1,4 @@
-package pastexams.mid.exam04_20200229_regular;
+package past_exams.mid.exam04_20200229_regular;
 
 import java.util.Arrays;
 import java.util.List;

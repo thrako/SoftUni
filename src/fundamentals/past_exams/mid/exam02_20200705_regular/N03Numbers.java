@@ -1,4 +1,4 @@
-package pastexams.mid.exam02_20200705_regular;
+package past_exams.mid.exam02_20200705_regular;
 
 import java.util.Arrays;
 import java.util.Comparator;
@@ -12,7 +12,7 @@ public class N03Numbers {
         List<Integer> numbers = Arrays.stream(scanner.nextLine().split("\\s+"))
                 .map(Integer::parseInt)
                 .collect(Collectors.toList());
-        double avgVal = numbers.stream().reduce(Integer::sum).get().doubleValue() / numbers.size();
+        double avgVal = numbers.stream().reduce(Integer::sum).orElse(0).doubleValue() / numbers.size();
         List<Integer> filteredSortedNumbers = numbers.stream()
                 .filter(e -> e > avgVal)
                 .sorted(Comparator.comparing(Integer::intValue).reversed())

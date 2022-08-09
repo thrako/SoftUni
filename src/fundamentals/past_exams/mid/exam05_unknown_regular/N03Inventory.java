@@ -1,4 +1,4 @@
-package pastexams.mid.exam05_unknown_regular;
+package past_exams.mid.exam05_unknown_regular;
 
 import java.util.Arrays;
 import java.util.List;

@@ -1,4 +1,4 @@
-package pastexams.mid.exam03_20200407_retake;
+package past_exams.mid.exam03_20200407_retake;
 
 import java.util.Arrays;
 import java.util.List;

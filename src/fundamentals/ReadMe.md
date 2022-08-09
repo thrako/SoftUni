@@ -1,5 +1,5 @@
 ### Java lessons (_theory and practice_):
-[Basic Syntax, Conditional Statements and Loops](https://github.com/thrako/SoftUni/tree/main/src/fundamentals/lesson01basicsyntax)  
+[Basic Syntax, Conditional Statements and Loops](https://github.com/thrako/SoftUni/tree/main/src/fundamentals/lesson01basic_syntax)  
 > Introduction to Basic Syntax  
 Input/Output  
 Comparison Operators  
@@ -8,7 +8,7 @@ Logical Operators
 Loops  
 Debugging and Troubleshooting  
 > 
-[Data Types and Variables](https://github.com/thrako/SoftUni/tree/main/src/fundamentals/lesson02datatypesandvariables)  
+[Data Types and Variables](https://github.com/thrako/SoftUni/tree/main/src/fundamentals/lesson02data_types_and_variables)  
 > Data Types and Variables  
 Integer Types  
 Real Number Types  
@@ -66,12 +66,12 @@ Methods
 > - Mapping  
 > - Ordering  
 > 
-[Text Processing](https://github.com/thrako/SoftUni/tree/main/src/fundamentals/lesson8text_processing)
+[Text Processing](https://github.com/thrako/SoftUni/tree/main/src/fundamentals/lesson08text_processing)
 > Strings  
 Manipulating Strings  
 Building and Modifying Strings  
 > 
-[Regular Expressions](https://github.com/thrako/SoftUni/tree/main/src/fundamentals/lesson9regex)
+[Regular Expressions](https://github.com/thrako/SoftUni/tree/main/src/fundamentals/lesson09regex)
 > Regular Expressions Syntax  
 Definition and Pattern  
 Predefined Character Classes  

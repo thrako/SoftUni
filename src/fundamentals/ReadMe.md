@@ -39,7 +39,7 @@ List Manipulating
 Reading Lists from the Console  
 Sorting Lists and Arrays  
 >
-[Past Exams Mid - practice](https://github.com/thrako/SoftUni/tree/main/src/fundamentals/past_exams/mid)
+[Past Exams Mid - practice](https://github.com/thrako/SoftUni/tree/main/src/fundamentals/past_exams/mid)  
 [My Mid Exam](https://github.com/thrako/SoftUni/tree/main/src/fundamentals/my_exams/mid20220625)  
 > 01 The Hunting Games  
 02 Tax Calculator  
@@ -79,11 +79,11 @@ Quantifiers and Grouping
 Backreferences  
 Regular Expressions in Java  
 > 
-Practical Exam  
+
 [Past Exams Final - practice](https://github.com/thrako/SoftUni/tree/main/src/fundamentals/past_exams/fin)  
 [My Final Exam](https://github.com/thrako/SoftUni/tree/main/src/fundamentals/my_exams)  
 > Hogwarts  
-Encrypting Password
+Encrypting Password  
 Messages Manager
 > 
 

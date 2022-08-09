@@ -1,4 +1,4 @@
-package lesson8text_processing.lab;
+package lesson08text_processing.lab;
 
 import java.util.Scanner;
 

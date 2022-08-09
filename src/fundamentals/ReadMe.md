@@ -45,7 +45,7 @@ Sorting Lists and Arrays
 02 Tax Calculator  
 03 The Angry Cat  
 > 
-[Objects and Classes](https://github.com/thrako/SoftUni/tree/main/src/fundamentals/exams/mid20220625)  
+[Objects and Classes](https://github.com/thrako/SoftUni/tree/main/src/fundamentals/lesson06objects)  
 >Objects  
 Classes  
 Built in Classes  

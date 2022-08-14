@@ -1,1 +1,1 @@
-Tasks Descriptions can be downloaded from [here](https://judge.softuni.org/Contests/Compete/DownloadResource/21459).
+Tasks Descriptions can be downloaded from [here](https://judge.softuni.org/Contests/Practice/DownloadResource/21459).

@@ -8,6 +8,7 @@ import java.util.Map;
 public class N04CountCharacterTypes_bug {
     private static final Map<String, Integer> TYPE_COUNT = new LinkedHashMap<>();
     private static final List<Character> VOWELS = List.of('a', 'e', 'i', 'o', 'u');
+    private static final List<Character> CAPITAL_VOWELS = List.of('A', 'E', 'I', 'O', 'U');
     private static final List<Character> PUNCTUATION = List.of('!', ',', '.', '?');
 
     public static void main(String[] args) throws IOException {
@@ -42,6 +43,7 @@ public class N04CountCharacterTypes_bug {
         for (var ch : chars) {
             if (Character.isLetter(ch)) {
                 if (VOWELS.contains(ch)) increment("Vowels");
+                else if (CAPITAL_VOWELS.contains(ch)) System.out.printf("Should we count this as a consonant? --> %s%n", ch);
                 else increment("Consonants");
             } else if (PUNCTUATION.contains(ch)) {
                 increment("Punctuation");

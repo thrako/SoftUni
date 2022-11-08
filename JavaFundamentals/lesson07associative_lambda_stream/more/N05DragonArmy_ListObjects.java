@@ -63,9 +63,9 @@ public class N05DragonArmy_ListObjects {
     }
 
     private static class Dragon {
-        private final int DEFAULT_DAMAGE = 45;
-        private final int DEFAULT_HEALTH = 250;
-        private final int DEFAULT_ARMOR = 10;
+        private static final int DEFAULT_DAMAGE = 45;
+        private static final int DEFAULT_HEALTH = 250;
+        private static final int DEFAULT_ARMOR = 10;
 
         private final String type;
         private final String name;

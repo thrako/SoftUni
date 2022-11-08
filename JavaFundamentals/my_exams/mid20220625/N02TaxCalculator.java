@@ -60,6 +60,7 @@ public class N02TaxCalculator {
         }
 
         public double calculateTax() {
+            //noinspection IntegerDivisionInFloatingPointContext
             return initTax - this.years * taxReliefPerYear + this.mileage / perMileageRate * taxPerMileageFee;
         }
     }
@@ -78,6 +79,7 @@ public class N02TaxCalculator {
         }
 
         public double calculateTax() {
+            //noinspection IntegerDivisionInFloatingPointContext
             return initTax - this.years * taxReliefPerYear + this.mileage / perMileageRate * taxPerMileageFee;
         }
     }
@@ -96,6 +98,7 @@ public class N02TaxCalculator {
         }
 
         public double calculateTax() {
+            //noinspection IntegerDivisionInFloatingPointContext
             return initTax - this.years * taxReliefPerYear + this.mileage / perMileageRate * taxPerMileageFee;
         }
     }

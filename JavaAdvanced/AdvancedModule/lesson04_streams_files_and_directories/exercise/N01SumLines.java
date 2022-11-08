@@ -1,5 +1,7 @@
 package lesson04_streams_files_and_directories.exercise;
 
+import lesson04_streams_files_and_directories.lab.Resources;
+
 import java.io.*;
 
 public class N01SumLines {

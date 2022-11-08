@@ -1,6 +1,5 @@
 package lesson06_defining_classes.exercise.N03SpeedRacing;
 
-import java.util.NoSuchElementException;
 import java.util.Scanner;
 
 class Main {

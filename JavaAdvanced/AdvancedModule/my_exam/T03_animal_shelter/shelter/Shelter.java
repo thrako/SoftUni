@@ -5,8 +5,8 @@ import java.util.Comparator;
 import java.util.List;
 
 public class Shelter {
-    private int capacity;
-    private List<Animal> data;
+    private int capacity; //private final int capacity => failed Judge test
+    private List<Animal> data; //private final List<Animal> data; => failed Judge test
 
     public Shelter(int capacity) {
         this.capacity = capacity;

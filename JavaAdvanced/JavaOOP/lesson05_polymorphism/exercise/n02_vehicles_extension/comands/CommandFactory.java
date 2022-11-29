@@ -1,20 +1,25 @@
 package lesson05_polymorphism.exercise.n02_vehicles_extension.comands;
 
+import java.util.HashMap;
+import java.util.Map;
 import java.util.function.Function;
 
-public enum CommandFactory {
-    Drive(DriveWithAcCommand::new),
-    DriveEmpty(DriveWithoutAcCommand::new),
-    Refuel(RefuelCommand::new)
-    ;
+public class CommandFactory {
 
-    private final Function<Double, Command> aNew;
+    private static final String UNKNOWN_COMMAND_MSG_FORMAT = "Unknown command type: %s";
+    private static final Map<String, Function<Double, Command>> COMMANDS = new HashMap<>();
 
-    CommandFactory(Function<Double, Command> aNew) {
-        this.aNew = aNew;
+    static  {
+        COMMANDS.put("Drive", DriveWithAcCommand::new);
+        COMMANDS.put("DriveEmpty", DriveWithoutAcCommand::new);
+        COMMANDS.put("Refuel", RefuelCommand::new);
     }
 
     public static Command construct(String type, Double argument) {
-        return CommandFactory.valueOf(type).aNew.apply(argument);
+        if (!COMMANDS.containsKey(type)) {
+            throw new IllegalArgumentException(String.format(UNKNOWN_COMMAND_MSG_FORMAT, type));
+        }
+
+        return COMMANDS.get(type).apply(argument);
     }
 }

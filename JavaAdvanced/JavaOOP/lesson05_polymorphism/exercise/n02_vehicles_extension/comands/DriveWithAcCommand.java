@@ -4,7 +4,7 @@ import lesson05_polymorphism.exercise.n02_vehicles_extension.vehicles.AirConditi
 
 public class DriveWithAcCommand implements Command {
 
-    double distance;
+    private final double distance;
 
     public DriveWithAcCommand(double distance) {
         this.distance = distance;

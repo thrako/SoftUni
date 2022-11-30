@@ -7,6 +7,7 @@ import lesson05_polymorphism.exercise.n02_vehicles_extension.exceptions.NotEnoug
 import java.text.DecimalFormat;
 
 public abstract class AirConditionedVehicle {
+
     private static final String TRAVEL_FORMAT = "%s travelled %s km";
     private static final String NEEDS_REFUEL_FORMAT = "%s needs refueling";
     private static final String REMAINING_FUEL_FORMAT = "%s: %.2f";
@@ -16,49 +17,54 @@ public abstract class AirConditionedVehicle {
 
     private static final DecimalFormat decimalFormat = new DecimalFormat("0.##");
 
-    protected double fuelQty;
+    protected double fuelQuantity;
     protected double fuelConsumptionPerKm;
-    protected double airConditionerConsumptionPerKm;
+    protected double AcConsumptionPerKm;
     protected double tankCapacity;
 
-    protected AirConditionedVehicle(double fuelQty, double fuelConsumptionPerKm, double airConditionerConsumptionPerKm, double tankCapacity) {
-        this.fuelQty = fuelQty;
+    protected AirConditionedVehicle(double fuelQuantity,
+                                    double fuelConsumptionPerKm,
+                                    double AcConsumptionPerKm,
+                                    double tankCapacity) {
+        this.fuelQuantity = fuelQuantity;
         this.fuelConsumptionPerKm = fuelConsumptionPerKm;
-        this.airConditionerConsumptionPerKm = airConditionerConsumptionPerKm;
+        this.AcConsumptionPerKm = AcConsumptionPerKm;
         this.tankCapacity = tankCapacity;
     }
 
-    public void driveWithAC(double kilometers) {
-        drive(kilometers, fuelConsumptionPerKm + airConditionerConsumptionPerKm);
+    public void driveWithAC(double distance) {
+        drive(distance, fuelConsumptionPerKm + AcConsumptionPerKm);
     }
 
-    public void driveWithoutAC(double kilometers) {
-        drive(kilometers, fuelConsumptionPerKm);
+    public void driveWithoutAC(double distance) {
+        drive(distance, fuelConsumptionPerKm);
     }
 
-    public boolean drive(double distance, double consumption) {
-        final double necessaryFuelQty = distance * consumption;
-        if (necessaryFuelQty > this.fuelQty) {
+    public void drive(double distance, double consumption) {
+        final double necessaryFuelQuantity = distance * consumption;
+
+        if (necessaryFuelQuantity > this.fuelQuantity) {
             throw new NotEnoughFuelException(String.format(NEEDS_REFUEL_FORMAT, this.getType()));
         }
-        this.fuelQty -= necessaryFuelQty;
+
+        this.fuelQuantity -= necessaryFuelQuantity;
         this.printTravelMsg(distance);
-        return true;
     }
 
-    public void refuel(double addedFuelQty) {
-        if (addedFuelQty <= 0) {
-
+    public void refuel(double addedFuelQuantity) {
+        if (addedFuelQuantity <= 0) {
             throw new IllegalRefuelArgumentException(FUEL_MUST_BE_POSITIVE_MESSAGE);
         }
-        if (fuelQty + addedFuelQty > tankCapacity) {
+
+        if (fuelQuantity + addedFuelQuantity > tankCapacity) {
             throw new NotEnoughCapacityException(CANNOT_FIT_FUEL_MESSAGE);
         }
-        this.fuelQty += addedFuelQty;
+
+        this.fuelQuantity += addedFuelQuantity;
     }
 
     public String getRemainingFuelMessage() {
-        return String.format(REMAINING_FUEL_FORMAT, this.getType(), this.fuelQty);
+        return String.format(REMAINING_FUEL_FORMAT, this.getType(), this.fuelQuantity);
     }
 
     public String getType() {

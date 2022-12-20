@@ -1,0 +1,15 @@
+dontinline,*.*_all_jmhStub
+dontinline,*.*_avgt_jmhStub
+dontinline,*.*_sample_jmhStub
+dontinline,*.*_ss_jmhStub
+dontinline,*.*_thrpt_jmhStub
+inline,benchmark/BenchmarkTests.testAddInArrayList
+inline,benchmark/BenchmarkTests.testAddInQueue
+inline,benchmark/BenchmarkTests.testAddInSinglyLinkedListAddFirst
+inline,benchmark/BenchmarkTests.testAddInSinglyLinkedListAddLast
+inline,benchmark/BenchmarkTests.testAddInStack
+inline,benchmark/BenchmarkTests.testQueuePoll
+inline,benchmark/BenchmarkTests.testRemoveAtFrontArrayList
+inline,benchmark/BenchmarkTests.testSinglyLinkedListRemoveFirst
+inline,benchmark/BenchmarkTests.testSinglyLinkedListRemoveLast
+inline,benchmark/BenchmarkTests.testStackPop

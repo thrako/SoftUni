@@ -1,0 +1,11 @@
+dontinline,*.*_all_jmhStub
+dontinline,*.*_avgt_jmhStub
+dontinline,*.*_sample_jmhStub
+dontinline,*.*_ss_jmhStub
+dontinline,*.*_thrpt_jmhStub
+inline,benchmark/DoublyLinkedListBenchmarkTest.setUp
+inline,benchmark/DoublyLinkedListBenchmarkTest.testAddFirst
+inline,benchmark/DoublyLinkedListBenchmarkTest.testAddLast
+inline,benchmark/DoublyLinkedListBenchmarkTest.testRemoveFirst
+inline,benchmark/DoublyLinkedListBenchmarkTest.testRemoveLast
+inline,benchmark/QueueBenchmarkTest.testAddInQueue

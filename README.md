@@ -1,7 +1,7 @@
 # SoftUni
 Educational Projects and Tasks 
 
-### Java Path
+## Java Path
 #### Fundamentals Module:
 2022-05 [Programming Fundamentals with Java](https://github.com/thrako/java_fundamentals)  
 

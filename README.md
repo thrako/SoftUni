@@ -7,7 +7,7 @@ Educational Projects and Tasks
 
 ### Advanced Module:
 #### 2022-09 [Java Advanced](https://github.com/thrako/java_advanced)
-#### 2022-10 [Java OOP]()
+#### 2022-10 [Java OOP](https://github.com/thrako)
 
 ### DB Module:
 #### 2022-09 [MySQL]()

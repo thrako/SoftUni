@@ -10,7 +10,7 @@ Educational Projects and Tasks
 2022-10 [Java OOP](https://github.com/thrako/java_oop)
 
 #### DB Module:
-2022-09 [MySQL]()  
+2022-09 [MySQL](https://github.com/thrako/MySQL)  
 2022-10 [Spring Data]()  
 
 #### Web Module:

@@ -16,8 +16,13 @@ Educational Projects and Tasks
 
 #### Web Module:
 2023-01 [:file_folder: Spring Fundamentals]() | *Ongoing*  
-2023-02 [Spring Advanced]() | *Not Started*  
+[Scheduled 2023-02] Spring Advanced | *Not Started*  
 
 ## Additional Courses
+
+#### Mathematics
 2022-05 [:file_folder:  Fundamentals in Mathematics]() | *[:page_facing_up: Certificate](https://softuni.bg/certificates/details/135837/047fb805)*  
-2022-09 [:file_folder: Data Structures Fundamentals (with Java)]()
+
+#### Abstract Data Structures
+2022-09 [:file_folder: Data Structures Fundamentals (with Java)]()  
+[Planned 2023] Data Structures Advanced (with Java)

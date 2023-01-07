@@ -3,7 +3,7 @@ Educational Projects and Tasks
 
 ## Java Path
 #### Fundamentals Module:
-2022-05 [Programming Fundamentals with Java](https://github.com/thrako/java_fundamentals)  
+2022-05 [Programming Fundamentals with Java](https://github.com/thrako/java_fundamentals) :page_facing_up:  
 
 #### Advanced Module:
 2022-09 [Java Advanced](https://github.com/thrako/java_advanced)  

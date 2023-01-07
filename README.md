@@ -25,4 +25,4 @@ Educational Projects and Tasks
 
 #### Abstract Data Structures
 2022-09 [:file_folder: Data Structures Fundamentals (with Java)]() Course Completed  
-[2023] Data Structures Advanced (with Java) | *Course Scheduled* 
+[2023-xx] Data Structures Advanced (with Java) | *Course Planned* 

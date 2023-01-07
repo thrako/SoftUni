@@ -3,7 +3,7 @@ Educational Projects and Tasks
 
 ## Java Path
 #### Fundamentals Module:
-2022-05 [:file_folder: Programming Fundamentals with Java](https://github.com/thrako/java_fundamentals) | *[:page_facing_up: Certificate](https://softuni.bg/certificates/details/138532/d1da1fa5)*  
+2022-05 :file_folder: [Programming Fundamentals with Java](https://github.com/thrako/java_fundamentals) | *[:page_facing_up: Certificate](https://softuni.bg/certificates/details/138532/d1da1fa5)*  
 
 
 #### Advanced Module:

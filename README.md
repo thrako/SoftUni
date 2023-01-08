@@ -24,5 +24,5 @@ Educational Projects and Tasks
 2022-05 [:file_folder:  Fundamentals in Mathematics](https://github.com/thrako/fundamentals_in_mathematics) | Course Completed | Exam Passed ->  *[:page_facing_up: Certificate](https://softuni.bg/certificates/details/135837/047fb805)*  
 
 #### Abstract Data Structures
-2022-09 [:file_folder: Data Structures Fundamentals (with Java)](https://github.com/thrako/data_structures_fundamentals) Course Completed  
+2022-09 [:file_folder: Data Structures Fundamentals (with Java)](https://github.com/thrako/data_structures_fundamentals) | Course Completed  
 [2023-xx] Data Structures Advanced (with Java) | *Course Planned* 

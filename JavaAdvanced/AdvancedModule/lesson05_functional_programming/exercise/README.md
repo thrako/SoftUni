@@ -1,1 +1,0 @@
-Tasks Descriptions can be downloaded from [here](https://judge.softuni.org/Contests/Practice/DownloadResource/23889).

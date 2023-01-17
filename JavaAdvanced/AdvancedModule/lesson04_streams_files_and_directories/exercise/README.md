@@ -1,2 +1,0 @@
-Tasks Descriptions can be downloaded from [here](https://judge.softuni.org/Contests/Practice/DownloadResource/23887).  
-Resources can be downloaded from [here](https://softuni.bg/downloads/svn/java-advanced/Jan-2021/Java-Advanced/04.%20Java-Advanced-Streams-Files-and-Directories/Excercise/04.%20Java-Advanced-Streams-Files-and-Directories-Resources.zip).

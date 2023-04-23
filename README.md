@@ -16,7 +16,7 @@ Educational Projects and Tasks
 
 #### Web Module:
 2023-01 [:file_folder: Spring Fundamentals](https://github.com/thrako/spring_fundamentals) | Course Completed  
-2023-02 [:file_folder: Spring Advanced](https://github.com/thrako/receptaria) | *Course Ongoing*  
+2023-02 [:file_folder: Spring Advanced](https://github.com/thrako/receptaria) | Course Completed | *[:page_facing_up: Certificate](https://softuni.bg/certificates/details/168861/461aa607)*   
 
 #### JS Advanced:
 [2023-xx] JS Advanced Module | *Course Planned*  
